@@ -1,4 +1,4 @@
-<?<php
+<?php
 
 if (isset($_POST['submit'])) {
     $name = $_POST['Your Name'];
@@ -14,5 +14,3 @@ if (isset($_POST['submit'])) {
 
 
 }
-
-></php>
