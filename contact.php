@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Contact With Us </title>
-    <link rel="shortcut icon" type="image/png" href="C:\Users\User\OneDrive\Desktop\website\images\favicon.png">
+    <link rel="shortcut icon" type="image/png" href="images\favicon.png">
     <link rel="stylesheet" href="style.css"
 </head>
 <body>
@@ -13,11 +13,11 @@
         <header>
             <nav class="navbar">
 
-                <a href="#" class="nav-branding"><img src="C:\Users\User\OneDrive\Desktop\website\images\logocircle.png" class="logo"></a>
+                <a href="#" class="nav-branding"><img src="images\logocircle.png" class="logo"></a>
                 <ul class="nav-menu">
-                    <li class="nav-item"><a href="C:\Users\User\OneDrive\Desktop\website\index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="C:\Users\User\OneDrive\Desktop\website\products.html" class="nav-link">Products</a></li>
-                    <li class="nav-item"><a href="C:\Users\User\OneDrive\Desktop\website\contact.html" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="contact.php" class="nav-link">Contact</a></li>
                 </ul>
                 <div class="hamburger">
                 <span class="bar"></span>
@@ -28,9 +28,9 @@
         </header>
         <script src="C:\Users\User\OneDrive\Desktop\website\script.js"></script>
         <ul class="sci">
-            <li><a href="#"><img src="C:\Users\User\OneDrive\Desktop\website\images\facebook.png"</a></li>
-            <li><a href="#"><img src="C:\Users\User\OneDrive\Desktop\website\images\twitter.png"</a></li>
-            <li><a href="#"><img src="C:\Users\User\OneDrive\Desktop\website\images\instagram.png"</a></li>
+            <li><a href="#"><img src="images\facebook.png"</a></li>
+            <li><a href="#"><img src="images\twitter.png"</a></li>
+            <li><a href="#"><img src="images\instagram.png"</a></li>
         </ul>
         <div class="contact-box">
             <form class="contact-form" action="contactform.php" method="post">
