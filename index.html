@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> F and O Square</title>
     <link rel="shortcut icon" type="image/png" href="images\favicon.png">
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap 5 CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
     <section class="sec">
         <header>
             <nav class="navbar">
-
                 <a href="#" class="nav-branding"><img src="images\logocircle.png" class="logo"></a>
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
@@ -20,45 +25,59 @@
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                 </ul>
                 <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
             </nav>
         </header>
         <script src="script.js"></script>
-        <div class="content">
-            <div class="textBox">
-                <h2>That`s What<br><span> I like</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Sit tempore a voluptates impedittempora suscipit laborum in dicta,
-                facilis adipisci omnis ratione, voluptate ducimus quos quod autem,
-                soluta assumenda dolor?</p>
-                <a href="https://fando2.com/">Visit Online Store</a>
-            </div>
-            <div class="imgBox">
-                <img src="images\yoga.jpg" class="yoga">
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="content">
+                        <div class="textBox">
+                            <h2>That's What<br><span>I Like</span></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Sit tempore a voluptates impedittempora suscipit laborum in dicta,
+                                facilis adipisci omnis ratione, voluptate ducimus quos quod autem,
+                                soluta assumenda dolor?</p>
+                            <a href="https://fando2.com/">Visit Online Store</a>
+                        </div>
+                        <div class="imgBox d-none d-lg-block">
+                            <img src="images/yoga.jpg" class="yoga">
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-12">
+                    <ul class="thumb s-pt-5 d-lg-inline-block">
+                        <li><img class="img-fluid" src="images/first.jpg" onclick="imgSlider('first.jpg');changeBgColor('#080a32')"></li>
+                        <li><img class="img-fluid" src="images/back.jpg" onclick="imgSlider('back.jpg');changeBgColor('#8a2022')"></li>
+                        <li><img class="img-fluid" src="images/last.jpg" onclick="imgSlider('last.jpg');changeBgColor('#1e1e1e')"></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <ul class="thumb">
-            <li><img src="images\first.jpg" onclick="imgSlider('first.jpg');changeBgColor('#080a32')"></li>
-            <li><img src="images\back.jpg" onclick="imgSlider('back.jpg');changeBgColor('#e60c2c')"></li>
-            <li><img src="images\last.jpg" onclick="imgSlider('last.jpg');changeBgColor('#1e1e1e')"></li>
-        </ul>
+
+
         <ul class="sci">
-            <li><a href="#"><img src="images\facebook.png"</a></li>
-            <li><a href="#"><img src="images\twitter.png"</a></li>
-            <li><a href="#"><img src="images\instagram.png"</a></li>
+            <li><a href="#"><img src="images\facebook.png"></li>
+            <li><a href="#"><img src="images\twitter.png"></li>
+            <li><a href="#"><img src="images\instagram.png"></li>
         </ul>
     </section>
     <script type="text/javascript">
-        function imgSlider(anything){
-            document.querySelector('.yoga').src = "images\\"+ anything;
+        function imgSlider(anything) {
+            document.querySelector('.yoga').src = "images\\" + anything;
         }
-        function changeBgColor(color){
+        function changeBgColor(color) {
             const sec = document.querySelector('.sec');
             sec.style.background = color;
         }
     </script>
 </body>
+
 </html>

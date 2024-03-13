@@ -7,6 +7,7 @@
     <title> Contact With Us </title>
     <link rel="shortcut icon" type="image/png" href="images\favicon.png">
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <section class="sec">
@@ -29,13 +30,13 @@
         <script src="script.js"></script>
         <ul class="sci">
             <li><a href="#"><img src="images\facebook.png"></li>
-            <li><a href="#"><img src="images\twitter.png"a></li>
-            <li><a href="#"><img src="images\instagram.png"a></li>
+            <li><a href="#"><img src="images\twitter.png"></li>
+            <li><a href="#"><img src="images\instagram.png"></li>
         </ul>
         <div class="contact-box">
-            <form class="contact-form" action="contactform.php" method="post">
+            <form class="contact-form" action="contactMail.php" method="post" enctype="multipart/form-data">
                 <input type="text" name="fullname" class="input-field" placeholder="Your Name" >
-                <input type="text" name="mail" class="input-field" placeholder="Your Email" >
+                <input type="mail" name="mail" class="input-field" placeholder="Your Email" >
                 <input type="text" name="subject" class="input-field" placeholder="Subject" >
                 <textarea type="text" name="message"  class="input-field textarea-field" placeholder="Your Message">
                 </textarea>
